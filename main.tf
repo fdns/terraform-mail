@@ -30,6 +30,10 @@ module "vpc" {
   availability_zone = var.availability_zone
 }
 
+module "ses" {
+  source            = "./modules/ses"
+}
+
 module instances {
   source = "./modules/instances"
 
