@@ -1,7 +1,7 @@
 resource "aws_spot_instance_request" "postfix" {
   availability_zone           = var.availability_zone
   ami                         = var.default_ami
-  instance_type               = "t3a.nano"
+  instance_type               = "t3.nano"
   subnet_id                   = var.subnet_cloud
   associate_public_ip_address = true
   vpc_security_group_ids      = ["${var.security_group}"]
