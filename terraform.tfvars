@@ -1,7 +1,7 @@
 # Project Setup
 project           = "mail"
 region            = "us-east-2"
-availability_zone = "us-east-2c"
+availability_zone = "us-east-2b"
 
 # VPC
 vpc_cidr   = "10.210.0.0/22"
