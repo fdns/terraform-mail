@@ -15,7 +15,7 @@ resource "aws_spot_instance_request" "postfix" {
     delete_on_termination = true
   }
 
-  spot_price                      = 0.0022
+  spot_price                      = 0.002600
   instance_interruption_behaviour = "stop"
   spot_type                       = "persistent"
   valid_until                     = "2030-01-01T00:00:00Z"
